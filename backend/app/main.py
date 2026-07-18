@@ -42,7 +42,7 @@ app = FastAPI(title = 'ValoCoach AI')
 # Configuración de CORS para permitir que el frontend (Next.js) acceda al backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:3001"],
+    allow_origins=["*"], # Permitir Vercel y cualquier otro origen
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
