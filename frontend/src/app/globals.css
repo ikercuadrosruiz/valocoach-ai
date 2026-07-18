@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  
+  /* Paleta Corporativa Profesional */
+  --color-background: #09090b; /* Muy oscuro, casi negro, elegante */
+  --color-foreground: #fafafa;
+  --color-card: #121214;
+  --color-card-border: #27272a;
+  
+  /* Acentos sutiles pero poderosos */
+  --color-primary: #ff4655; /* Valorant Red - Usar con moderación */
+  --color-primary-hover: #ff5866;
+  --color-muted: #27272a;
+  --color-muted-foreground: #a1a1aa;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Un ligero degradado de fondo corporativo para no ser un negro plano */
+    background-image: radial-gradient(circle at 50% 0%, rgba(255, 70, 85, 0.05), transparent 40%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: white;
+  }
+}
+
+/* Efecto Glassmorphism Empresarial (Premium) */
+.glass-panel {
+  background: rgba(18, 18, 20, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
