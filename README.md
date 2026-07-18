@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://media.valorant-api.com/competitivetiers/03621f52-3424-cf33-0469-25a6a5b28ce2/24/largeicon.png" width="100" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Valorant_logo_-_pink_color_version.svg" width="100" />
   <h1>ValoCoach AI</h1>
   <p><strong>Tu Analista de eSports Impulsado por Inteligencia Artificial</strong></p>
 </div>
